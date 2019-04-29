@@ -1,0 +1,17 @@
+<h1> Lista de Quizzes </h1>
+<div style="overflow-x:auto;">
+<table>
+  <!-- quizzes se entiende como lo que le pasas desde la
+  funcion del quiz_controller .index -->
+  <% for (var i in quizzes){%>
+    <% var quiz = quizzes[i]; %>
+    <tr>
+      <td> <%= quiz.question %> </td>
+      <td>:</td>
+      <td><%= quiz.answer %> </td>
+
+</tr>
+
+  <% } %>
+</table>
+</div>
